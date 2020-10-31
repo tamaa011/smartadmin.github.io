@@ -78,6 +78,7 @@
                 <th>Person Name</th>
                 <th>email</th>
                 <th>Phone Number</th>
+                <th>Note</th>
                <th>More</th>
             </tr>
         </thead>
@@ -144,6 +145,7 @@ $(document).ready(function () {
      { "data": "PersonName" },
       { "data": "email" },
     { "data": "PhoneNumber" },
+    { "data": "Note" },
          {
       "data": null,
         'render': function (data, type, row) {
@@ -179,7 +181,7 @@ function EditHalls(id){
     },
     success: function (data) {
       alert(data.message);
-        window.location.href = 'Listcompanies.html'
+        window.location.href = 'ListWorkCompanies.html'
     },
        error: function (data) {
       alert(data.message);

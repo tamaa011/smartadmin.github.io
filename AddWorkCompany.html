@@ -79,11 +79,11 @@
                     </div>
                     <div class="form-group">
                       <label for="exampleInputEmail3">Person Name</label>
-                      <input type="text" class="form-control" id="ha" placeholder="Person Name" name="PersonName" required>
+                      <input type="text" class="form-control" id="ha" placeholder="Person Name" name="PersonName">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword4">Email</label>
-                        <input type="email" class="form-control" id="hd" placeholder="Email" name="email" required >
+                        <input type="email" class="form-control" id="hd" placeholder="Email" name="email" >
                     </div>
                     <div class="form-group">
                       <label for="exampleSelectGender">Phone Number</label>
@@ -163,11 +163,7 @@ $(function(){
         
           if(CompanyName.length < 1) {
               alert("Please Fill the Company Name field");
-          }else if (PersonName.length < 1) {
-    alert("Please Fill the Person Name field");
-  }else if (email.length < 1) {
-    alert("Please Fill the Email field");
-  }else if (PhoneNumber.length < 1) {
+          }else if (PhoneNumber.length < 1) {
     alert("Please Fill the Phone Number field");
   } else {
               document.getElementById("submit").style.display = "none";

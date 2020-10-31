@@ -182,7 +182,7 @@ function AddNewAdmin(){
     }
 function isPasswordMatch() {
     var password = $("#UserPassword").val();
-    var confirmPassword = $("#REPassword").val();
+    var confirmPassword = $("#RE-Password").val();
 
     if (password != confirmPassword) { $("#divCheckPassword").html("Passwords do not match!");
                                       
@@ -193,7 +193,7 @@ function isPasswordMatch() {
 }
     function myFunction() {
          var x = document.getElementById("UserPassword");
-        var y = document.getElementById("REPassword");
+        var y = document.getElementById("RE-Password");
   if (x.type === "password" && y.type === "password" ) {
     x.type = "text";
       y.type = "text";
